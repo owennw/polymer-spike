@@ -39,7 +39,7 @@ module.exports = {
         exclude: helpers.root('index.ejs')
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           'css-to-string-loader',
           {
@@ -48,7 +48,7 @@ module.exports = {
               importLoaders: 1,
             }
           },
-          'postcss-loader'
+          'sass-loader'
         ]
       }
     ]
