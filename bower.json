@@ -1,0 +1,19 @@
+{
+  "name": "polymer-spike",
+  "description": "",
+  "authors": [
+    "Nick Owen <nowen@scottlogic.co.uk>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer"
+  }
+}

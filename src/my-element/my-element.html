@@ -1,0 +1,24 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<script>
+  import { createTemplate } from '../util'
+  
+  import * as content from './my-element.ejs'
+  import * as style from './my-element.css'
+  
+  class MyElement extends Polymer.Element {
+    static get is() { return 'my-element' }
+
+    static get template() { 
+      return createTemplate(style, content)
+    }
+
+    constructor() {
+      super()
+
+      this.today = new Date()
+    }
+  }
+
+  window.customElements.define(MyElement.is, MyElement)
+</script>

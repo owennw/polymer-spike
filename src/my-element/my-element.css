@@ -1,0 +1,4 @@
+@import '../styles/variables'
+
+h1
+  color: var(--title-color)
